@@ -1,0 +1,129 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    
+}
+header{
+    height: 150px;
+    display: grid;
+    grid-template-rows:30px 30px 30px 30px ;
+    grid-template-columns:330px 200px 220px 220px 220px 220px ;
+    grid-gap:4px ;
+    background-color: #65c1d8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+img{
+    grid-area: 3/1/4/2;
+    text-align: right;
+}
+ 
+h2{
+    color:#1d3354;
+   grid-area: 2/4/3/6;
+   text-align: left;
+}
+
+nav {
+    grid-area:4/3/5/6;
+    display: flex;
+    justify-content: space-evenly;
+}
+ /*----------------------- packages section ------------------> */
+section{
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column  ;
+}
+.sub-packages{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.package-card {
+    border: 2px solid grey;
+    margin: 20px auto;
+    padding: 15px;
+    width: 380px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+   
+}
+
+.package-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,2);
+}
+button{
+    height: 40px;
+    color: white;
+    background-color: #00466e;
+}
+/* ---------------destination highlight------------ */
+
+.Destination{
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+
+.destination{
+    border: 2px solid grey;
+    margin: 20px auto;
+    padding: 15px;
+    width: 380px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+   
+}
+
+.destination:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,2);
+}
+
+/* ------------contact us -----------------*/
+.contact-form{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ .contact-form input, .contact-form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    }
+    /* -------------footer------------- */
+    .footer{
+        background-color: rgb(107, 103, 103);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    footer.socials a {
+color:aliceblue;
+margin: 5px;
+text-decoration: none;
+    }
+
+    /* ------------media query ----------- */
+    @media screen and (max-width: 750px) {
+    
+    .sub-packages{ 
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;}
+            
+            .Destination{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+        
+        
+    }
